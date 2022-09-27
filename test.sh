@@ -248,26 +248,33 @@ then
 echo " "
 
 
+
 elif [ $opt1 == 12 ]
 then
-echo "-------------------------------OutPut-----------------------------------"
-echo "Total number of Directories here.." 
-echo "Loading all directories.." 
-sleep 3
-echo "Counting.." 
-sleep 3
-echo "Number of Directories are : "
-echo */ | wc -w
+           echo "-------------------------------OutPut-----------------------------------"
+           echo "Total number of Directories here.." 
+           echo "Loading all directories.." 
+           sleep 3
+           echo "Counting.." 
+           sleep 3
+           echo "Number of Directories are : "
+           echo */ | wc -w
 echo " "
+
+
+
 elif [ $opt1 == 13 ]
 then
-echo "-------------------------------OutPut-----------------------------------"
-echo "Total Numbers of Files in Current Directory here.." 
-echo "Loading all files.." 
-sleep 3
-echo "Number of Files are : "
-ls -l | grep -v 'total' | grep -v '^d' | wc -l
+           echo "-------------------------------OutPut-----------------------------------"
+           echo "Total Numbers of Files in Current Directory here.." 
+           echo "Loading all files.." 
+           sleep 3
+           echo "Number of Files are : "
+           ls -l | grep -v 'total' | grep -v '^d' | wc -l
 echo " "
+
+
+
 elif [ $opt1 == 14 ]
 then
 echo "-------------------------------OutPut------------------------------------"
