@@ -165,36 +165,43 @@ then
            echo " "
 	   fi
 
+
 elif [ $opt1 == 8 ]
 then
-echo "View content of file here.."
-echo "Enter File Name : " 
-read readfile 
-echo "-------------------------------OutPut------------------------------------"
-if [ -f "$readfile" ]; 
-then
-echo "Showing file content.." 
-sleep 3
-cat $readfile 
-else
-echo "$readfile does not exist" 
-fi
+           echo "View content of file here.."
+           echo "Enter File Name : " 
+           read readfile 
+           echo "-------------------------------OutPut------------------------------------"
+           
+	   if [ -f "$readfile" ]; 
+           then
+                     echo "Showing file content.." 
+                     sleep 3
+                     cat $readfile 
+           else
+                     echo "$readfile does not exist" 
+           fi
 echo " "
+
+
 elif [ $opt1 == 9 ]
 then
-echo "Sort files content here.."
-echo "Enter File Name with Extension to sort :" 
-read sortfile
-echo "-------------------------------OutPut------------------------------------" 
-if [ -f "$sortfile" ];
-then
-echo "Sorting File Content.." 
-sleep 3
-sort $sortfile 
-else 
-echo "$sortfile File does not exist..Try again." 
-fi
+           echo "Sort files content here.."
+           echo "Enter File Name with Extension to sort :" 
+           read sortfile
+           echo "-------------------------------OutPut------------------------------------" 
+ 
+	   if [ -f "$sortfile" ];
+           then
+                      echo "Sorting File Content.." 
+                      sleep 3
+                      sort $sortfile 
+           else 
+                      echo "$sortfile File does not exist..Try again." 
+           fi
 echo " "
+
+
 elif [ $opt1 == 10 ] 
 then
 echo "-------------------------------OutPut-----------------------------------"
