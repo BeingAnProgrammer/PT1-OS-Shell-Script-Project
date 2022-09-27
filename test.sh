@@ -277,19 +277,21 @@ echo " "
 
 elif [ $opt1 == 14 ]
 then
-echo "-------------------------------OutPut------------------------------------"
-echo "Sort Files here.." 
-echo "Your Request of Sorting file is Generated."
-echo "Sorting.." 
-sleep 3
-ls | sort
-echo " "
+           echo "-------------------------------OutPut------------------------------------"
+           echo "Sort Files here.." 
+           echo "Your Request of Sorting file is Generated."
+           echo "Sorting.." 
+           sleep 3
+           ls | sort
+           echo " "
+
+
 elif [ $opt1 == 0 ] 
 then
-echo "Good Bye.." 
-echo "Successfully Exit"
-break
+           echo "Good Bye.." 
+           echo "Successfully Exit"
+           break
 else
 echo "Invalid Input..Try again...." 
 fi
-done
+
