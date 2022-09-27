@@ -204,45 +204,50 @@ echo " "
 
 elif [ $opt1 == 10 ] 
 then
-echo "-------------------------------OutPut-----------------------------------"
-echo "List of all Directories here.."
-echo "showing all Directories..." 
-echo "Loading.." 
-sleep 3 
-ls -d */
+           echo "-------------------------------OutPut-----------------------------------"
+           echo "List of all Directories here.."
+           echo "showing all Directories..." 
+           echo "Loading.." 
+           sleep 3 
+           ls -d */
 echo " "
+
+
 elif [ $opt1 == 11 ]
 then
-echo "List of Files with Particular extensions here.." 
-echo "Which type of file list you want to see?"
-echo "1- .c"
-echo "2- .sh"
-echo "3- .txt" 
-echo "Enter your choice from 1-3" 
-read extopt
-echo "-------------------------------OutPut-----------------------------------"
-if [ $extopt == 1 ] 
-then
-echo "List of .c Files shown below."
-echo "Loading.." 
-sleep 3
-ls *.c
-elif [ $extopt == 2 ] 
-then
-echo "List of .sh Files shown below."
-echo "Loading.." 
-sleep 3
-ls *.sh
-elif [ $extopt == 3 ]
-then
-echo "List of .txt Files shown below."
-echo "Loading.." 
-sleep 3 
-ls *.txt
-else
-echo "Invalid Input..Try again.." 
-fi
+           echo "List of Files with Particular extensions here.." 
+           echo "Which type of file list you want to see?"
+           echo "1- .c"
+           echo "2- .sh"
+           echo "3- .txt" 
+           echo "Enter your choice from 1-3" 
+           read extopt
+           echo "-------------------------------OutPut-----------------------------------"
+
+	   if [ $extopt == 1 ] 
+           then
+                       echo "List of .c Files shown below."
+                       echo "Loading.." 
+                       sleep 3
+                       ls *.c
+           elif [ $extopt == 2 ] 
+           then
+                       echo "List of .sh Files shown below."
+                       echo "Loading.." 
+                       sleep 3
+                       ls *.sh
+           elif [ $extopt == 3 ]
+           then
+                       echo "List of .txt Files shown below."
+                       echo "Loading.." 
+                       sleep 3 
+                       ls *.txt
+           else
+                       echo "Invalid Input..Try again.." 
+           fi
 echo " "
+
+
 elif [ $opt1 == 12 ]
 then
 echo "-------------------------------OutPut-----------------------------------"
